@@ -1,0 +1,473 @@
+
+*
+{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+html,
+body
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.a-element
+{
+    position: relative;
+}
+ .clearfix{
+    clear: both;
+ }
+
+
+/* Main Wrapper */
+.main_wrapper
+{
+    max-width: 100%;
+
+    height: 100%;
+}
+
+/* Nav */
+.topNav_wrap_main
+{
+    position: fixed;
+    z-index: 998;
+
+    height: 45px;
+    margin-left: -15px;
+}
+.topNav_wrap
+{
+    float: left;
+
+    width: inherit;
+    height: inherit;
+}
+.topNav
+{
+    font-size: 0;
+
+    width: inherit;
+    height: inherit;
+
+    text-align: center;
+}
+.topNav li
+{
+    font-family: Tahoma,Verdana, Segoe, sans-serif;
+    font-size: 25px;
+
+    display: inline-block;
+}
+.topNav li:hover
+{
+    border-bottom: 2px solid #0098b8;
+}
+.topNav li a
+{
+    float: left;
+
+    height: inherit;
+    padding: 5px 10px;
+
+    list-style: none;
+
+    transition: color .35s ease-in 0s;
+    text-decoration: none;
+
+    color: white;
+}
+.topNav li a:hover
+{
+    color: #111;
+}
+.aboutLink
+{
+    cursor: pointer;
+}
+.workLink{
+    cursor: pointer;
+}
+#sidenav_icon
+{
+    display: none;
+    float: left;
+
+    margin-left: 13px;
+
+    cursor: pointer;
+
+    border-bottom-right-radius: 15px;
+    background-color: #313131;
+    background-image: url('../images/opt/menu_white.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*Side Nav*/
+
+.sidenav
+{
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Stay on top */
+    top: 0;
+    left: 0;
+
+    overflow-x: hidden; /* Disable horizontal scroll */
+
+    width: 0; /* 0 width - change this with JavaScript */
+    height: 100%; /* 100% Full-height */
+    padding-top: 60px; /* Place content 60px from the top */
+
+    transition: .5s; /* 0.5 second transition effect to slide in the sidenav */
+
+    border-bottom-right-radius: 15px;
+    background-color: #111; /* Black*/
+}
+
+
+.sidenav a
+{
+    font-size: 25px;
+
+    display: block;
+
+    padding: 8px 8px 8px 32px;
+
+    transition: .3s;
+    text-decoration: none;
+
+    color: white;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus
+{
+    color: #f1f1f1;
+}
+
+.closebtn
+{
+    font-size: 36px !important;
+
+    position: absolute;
+    top: 0;
+    right: 25px;
+
+    margin-left: 50px;
+}
+
+#main
+{
+    padding: 20px;
+
+    transition: margin-left .5s;
+}
+
+/* Banner */
+.banner_wrap
+{
+    height: 100%;
+
+    background-image: url('../images/opt/bannerBlue.png');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* Programming Language Logos */
+.language_logo_wrap_main
+{
+    position: absolute;
+    z-index: 100;
+    top: 10px;
+    right: 10px;
+
+    width: 200px;
+    height: 125px;
+}
+.language_logo_wrap1
+{
+    width: 110px;
+    height: 55px;
+}
+.language_logo_wrap2
+{
+    width: 180px;
+    height: 60px;
+}
+.language_logo
+{
+    float: left;
+
+    width: 50px;
+    height: 50px;
+}
+#htmllogo
+{
+    width: 55px;
+    margin-right: 5px;
+}
+#csslogo
+{
+    width: 40px;
+    margin-left: 5px;
+}
+#jslogo
+{
+    margin-right: 10px;
+}
+#wplogo
+{
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+}
+
+
+/*Banner Headings*/
+
+.banner_name_wrap
+{
+    position: relative;
+    top: 195px;
+
+    max-width: 99%;
+    margin: 0 auto;
+
+    text-align: center;
+}
+/*Banner Name*/
+#name
+{
+    font-family: Montserrat,sans-serif;
+    /*font-family: Copperplate, "Copperplate Gothic Light", fantasy;*/
+    font-size: 75px;
+    font-weight: 700;
+
+    margin: 0;
+
+    letter-spacing: 5px;
+
+    opacity: 0;
+    color: #fff;
+    text-shadow: 15px 10px 5px rgba(0,0,0,.5),  0 0 1px #fff;
+}
+
+/*Banner Fade In*/
+.fadein_wrap_main
+{
+    position: relative;
+    top: 350px;
+
+    width: 99%;
+    max-width: 99%;
+
+    text-align: center;
+}
+.fadein_wrap
+{
+    display: inline-block;
+
+    width: 33%;
+}
+.fadein_wrap h1
+{
+    font-family: Montserrat,sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+
+    display: inline-block;
+
+    margin: 0;
+
+    opacity: 0;
+    /*font-family: Copperplate, "Copperplate Gothic Light", fantasy;*/
+    color: #fff;
+    text-shadow: 20px 15px 3px rgba(0,0,0,.5),  0 0 1px #fff;
+}
+
+/* Body/Content */
+.content_wrap_main
+{
+    overflow-x: hidden;
+
+    background-color: #e6e6e6;
+}
+.content_wrap
+{
+    font-size: 22px;
+
+    width: inherit;
+    height: inherit;
+}
+.about_sub_wrapper1
+{
+    width: 80%;
+    margin-top: 25px;
+}
+.content_heading_wrap
+{
+    max-width: 100%;
+    min-height: 90px;
+
+    text-align: center;
+}
+@keyframes about_slide_left
+{
+    0%
+    {
+        left: 300px;
+
+        opacity: 0;
+    }
+}
+
+.content_heading
+{
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+
+    left: 0;
+
+    width: 99%;
+    margin-bottom: 5px;
+
+    text-align: center;
+    text-align: center;
+    letter-spacing: 3px;
+
+    color: #007f77;
+}
+.a-element.s-l.in-view
+{
+    animation-name: about_slide_left;
+    animation-duration: 1s;
+}
+
+@keyframes aboutText_slide_right
+{
+    0%
+    {
+        right: 400px;
+
+        opacity: 0;
+    }
+}
+#abouttext1
+{
+    right: 0;
+
+    margin-top: 25px;
+}
+.a-element.s-r.in-view
+{
+    animation-name: aboutText_slide_right;
+    animation-duration: 1s;
+}
+.about_sub_wrapper2
+{
+    width: 80%;
+    margin-top: 50px;
+}
+@keyframes aboutText_fadeIn
+{
+    0%
+    {
+        opacity: 0;
+    }
+}
+.a-element.f-i.in-view
+{
+    animation-name: aboutText_fadeIn;
+    animation-duration: 2s;
+}
+.tenets
+{
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+
+    width: 99%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+    text-align: center;
+    letter-spacing: 3px;
+
+    color: #005953;
+}
+
+.pl_wrap_main
+{
+    font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans serif;
+
+    max-width: 80%;
+    margin-top: 40px;
+
+    text-align: center;
+}
+.plBox
+{
+    height: 75px;
+    margin: 0 auto;
+    margin-top: 5px;
+
+    transition: ease-in 1s;
+    text-align: center;
+    vertical-align: middle;
+
+    border: 1px solid white;
+    border-radius: 45px;
+    background-color: #29a4ba;
+}
+.plText
+{
+    font-size: 25px;
+
+    margin-top: 15px;
+
+    color: white;
+}
+
+/* Work */
+.work_wrap_main{
+    margin-top: 50px;
+    max-width: 90%;
+    width: 90%;
+}
+.work_wrap{
+    margin-top: 15px;
+}
+.workItem{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+.workItem a{
+    text-decoration: none !important;
+}
+.workDescription{
+    width: 50%;
+    display: block;
+    text-align: center;
+    font-family: Ubuntu;
+}
+.workName{
+    margin: 45px 0px 25px 0px;
+    color: #00445D;
+    text-align: center;
+}
+.workImg{
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 5px 0px 10px;
+}

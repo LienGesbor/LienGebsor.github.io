@@ -1,0 +1,141 @@
+
+/*Height: 450px*/
+@media screen and (max-height: 450px) {
+	
+	.banner_wrap {
+		height: 450px;
+	}
+
+	.banner_name_wrap {
+		top: 165px;
+	}
+
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*Min Width*/
+
+
+
+@media screen and (min-width: 900px) {
+    .banner_wrap {
+    	height: 100%;
+    }
+
+    .banner_name_wrap {
+    	top: 275px;
+    }
+}
+
+
+
+@media screen and (max-width: 1375px) {
+	.workItem{
+		float: none;
+		display: block;
+	}
+}
+
+
+/* Max Width: 850px*/
+
+@media screen and (max-width: 850px) {
+
+	.fadein_wrap{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 750px) {
+
+
+	#name{
+		top: 175px;
+		font-size: 50px;
+	}
+
+	.fadein_wrap_main{
+		top: 250px;
+
+	}
+
+}
+
+
+/* Max Width: 700px*/
+
+@media screen and (max-width: 700px) {
+
+.topNav_wrap {
+    display: none;
+}
+
+#sidenav_icon{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+
+.topNav_wrap {
+    display: none;
+}
+
+#sidenav_icon{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.banner_wrap{
+	background-attachment: scroll;
+}
+
+}
+
+/* Max Width: 400px*/
+@media screen and (max-width: 450px) {
+
+.plBox{
+	border-radius: 25px;
+}
+.plText{
+	font-size: 20px;
+}
+}
+
+@media screen and (max-width: 400px) {
+
+#name {
+	font-size: 3.13em;
+}
+
+.language_logo_wrap_main{
+	left: 0px;
+	width: 200px;
+	height: 125px;
+	z-index: 100;
+}
+}
+
+/* Max Width: 360px*/
+@media screen and (max-width: 330px) {
+
+
+/*.banner_wrap{
+	height: 400px;
+}*/
+
+.banner_name_wrap{
+	top: 165px;
+}
+
+#name{
+	font-size: 2.5em;
+}
+
+
+}
